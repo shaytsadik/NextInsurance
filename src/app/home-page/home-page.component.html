@@ -1,0 +1,4 @@
+<app-vehicle-selector *ngIf="!showMessage" (Submit)='onSubmit($event)'></app-vehicle-selector>
+
+<h1 *ngIf="showMessage">Thank you for submitting the data!</h1>
+<button *ngIf="showMessage" mat-raised-button color="primary" (click)="showMessage = false;">Reset</button>

@@ -1,0 +1,11 @@
+<app-autocomplete-filter Placeholder="Manufacturer" [Options]='manufacturerOptions'
+    (OptionSelected)="manufacturerOptionSelected($event)">
+</app-autocomplete-filter>
+
+<app-autocomplete-filter Placeholder="Make" [Options]='makeOptions' (OptionSelected)="makeOptionSelected($event)">
+</app-autocomplete-filter>
+
+<app-autocomplete-filter Placeholder="Model" [Options]='modelOptions' (OptionSelected)="modelOptionSelected($event)">
+</app-autocomplete-filter>
+
+<button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
